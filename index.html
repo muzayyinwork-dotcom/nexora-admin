@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <a href="#" class="logo">
+            <span class="logo-icon">N</span>
+            Nexora
+          </a>
+
+          <nav class="sidebar-nav">
+            <p class="nav-label">Overview</p>
+
+            <a href="#" class="nav-item active">
+              <span>▣</span>
+              Dashboard
+            </a>
+
+            <a href="#" class="nav-item">
+              <span>◫</span>
+              Projects
+            </a>
+
+            <a href="#" class="nav-item">
+              <span>✓</span>
+              Tasks
+            </a>
+
+            <a href="#" class="nav-item">
+              <span>◉</span>
+              Team
+            </a>
+
+            <a href="#" class="nav-item">
+              <span>▥</span>
+              Analytics
+            </a>
+
+            <a href="#" class="nav-item">
+              <span>✉</span>
+              Messages
+            </a>
+
+            <a href="#" class="nav-item">
+              <span>□</span>
+              Calendar
+            </a>
+
+            <p class="nav-label">Support</p>
+
+            <a href="#" class="nav-item">
+              <span>⚙</span>
+              Settings
+            </a>
+
+            <a href="#" class="nav-item">
+              <span>?</span>
+              Help & Support
+            </a>
+          </nav>
+        </div>
+
+        <div class="sidebar-user">
+          <div class="user-avatar">M</div>
+
+          <div class="user-info">
+            <strong>Muzayyin</strong>
+            <span>Admin</span>
+          </div>
+
+          <button class="logout-btn" aria-label="Logout">↪</button>
+        </div>
+      </aside>
+
+      <div class="sidebar-overlay" id="overlay"></div>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+              ☰
+            </button>
+
+            <div>
+              <h1>Dashboard</h1>
+              <p>Welcome back, Muzayyin</p>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <div class="search">
+              <span>⌕</span>
+              <input type="search" placeholder="Search..." />
+            </div>
+
+            <button class="icon-btn" aria-label="Notifications">
+              ♢
+              <span class="notification-dot"></span>
+            </button>
+
+            <div class="profile">
+              <div class="profile-avatar">M</div>
+
+              <div class="profile-info">
+                <strong>Muzayyin</strong>
+                <span>Administrator</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
+          <section class="stats-grid">
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-icon purple">▣</div>
+                <span class="trend positive">+12.5%</span>
+              </div>
+
+              <span class="stat-label">Total Projects</span>
+              <strong class="stat-number">24</strong>
+              <span class="stat-description">Compared to last month</span>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-icon cyan">✓</div>
+                <span class="trend positive">+8.2%</span>
+              </div>
+
+              <span class="stat-label">Completed Tasks</span>
+              <strong class="stat-number">184</strong>
+              <span class="stat-description">Compared to last month</span>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-icon green">◉</div>
+                <span class="trend positive">+4.6%</span>
+              </div>
+
+              <span class="stat-label">Team Members</span>
+              <strong class="stat-number">32</strong>
+              <span class="stat-description">Compared to last month</span>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-top">
+                <div class="stat-icon orange">$</div>
+                <span class="trend positive">+15.8%</span>
+              </div>
+
+              <span class="stat-label">Revenue</span>
+              <strong class="stat-number">$48,250</strong>
+              <span class="stat-description">Compared to last month</span>
+            </article>
+          </section>
+
+          <section class="main-grid">
+            <article class="card analytics-card">
+              <div class="card-header">
+                <div>
+                  <h2>Project Overview</h2>
+                  <p>Track your project activity over time</p>
+                </div>
+
+                <select>
+                  <option>Last 6 months</option>
+                  <option>Last 12 months</option>
+                  <option>This year</option>
+                </select>
+              </div>
+
+              <div class="chart">
+                <div class="chart-y">
+                  <span>100</span>
+                  <span>80</span>
+                  <span>60</span>
+                  <span>40</span>
+                  <span>20</span>
+                  <span>0</span>
+                </div>
+
+                <div class="chart-area">
+                  <div class="grid-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <div class="bars">
+                    <div class="bar-group">
+                      <div class="bar purple-bar" style="height: 48%"></div>
+                      <div class="bar cyan-bar" style="height: 30%"></div>
+                      <small>Jan</small>
+                    </div>
+
+                    <div class="bar-group">
+                      <div class="bar purple-bar" style="height: 62%"></div>
+                      <div class="bar cyan-bar" style="height: 38%"></div>
+                      <small>Feb</small>
+                    </div>
+
+                    <div class="bar-group">
+                      <div class="bar purple-bar" style="height: 55%"></div>
+                      <div class="bar cyan-bar" style="height: 45%"></div>
+                      <small>Mar</small>
+                    </div>
+
+                    <div class="bar-group">
+                      <div class="bar purple-bar" style="height: 75%"></div>
+                      <div class="bar cyan-bar" style="height: 50%"></div>
+                      <small>Apr</small>
+                    </div>
+
+                    <div class="bar-group">
+                      <div class="bar purple-bar" style="height: 68%"></div>
+                      <div class="bar cyan-bar" style="height: 58%"></div>
+                      <small>May</small>
+                    </div>
+
+                    <div class="bar-group">
+                      <div class="bar purple-bar" style="height: 88%"></div>
+                      <div class="bar cyan-bar" style="height: 65%"></div>
+                      <small>Jun</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart-legend">
+                <span><i class="legend-purple"></i> Completed</span>
+                <span><i class="legend-cyan"></i> Active</span>
+              </div>
+            </article>
+
+            <article class="card activity-card">
+              <div class="card-header">
+                <div>
+                  <h2>Recent Activity</h2>
+                  <p>Latest team updates</p>
+                </div>
+
+                <a href="#">View all</a>
+              </div>
+
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-avatar purple-bg">S</div>
+
+                  <div class="activity-text">
+                    <p><strong>Sarah</strong> completed Website Homepage</p>
+                    <span>12 minutes ago</span>
+                  </div>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-avatar cyan-bg">A</div>
+
+                  <div class="activity-text">
+                    <p><strong>Alex</strong> created a new project</p>
+                    <span>34 minutes ago</span>
+                  </div>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-avatar green-bg">J</div>
+
+                  <div class="activity-text">
+                    <p><strong>John</strong> uploaded a design file</p>
+                    <span>1 hour ago</span>
+                  </div>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-avatar orange-bg">S</div>
+
+                  <div class="activity-text">
+                    <p><strong>Sara</strong> joined the marketing team</p>
+                    <span>2 hours ago</span>
+                  </div>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-avatar purple-bg">M</div>
+
+                  <div class="activity-text">
+                    <p><strong>Muzayyin</strong> updated project settings</p>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="bottom-grid">
+            <article class="card projects-card">
+              <div class="card-header">
+                <div>
+                  <h2>Project Progress</h2>
+                  <p>Current status of active projects</p>
+                </div>
+
+                <a href="#">View all</a>
+              </div>
+
+              <div class="project-list">
+                <div class="project-item">
+                  <div class="project-info">
+                    <div class="project-icon purple">W</div>
+
+                    <div>
+                      <strong>Website Redesign</strong>
+                      <span>12 team members</span>
+                    </div>
+                  </div>
+
+                  <div class="progress-area">
+                    <div class="progress-header">
+                      <span>78%</span>
+                      <span>In Progress</span>
+                    </div>
+
+                    <div class="progress">
+                      <span style="width: 78%"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-item">
+                  <div class="project-info">
+                    <div class="project-icon cyan">M</div>
+
+                    <div>
+                      <strong>Mobile Application</strong>
+                      <span>8 team members</span>
+                    </div>
+                  </div>
+
+                  <div class="progress-area">
+                    <div class="progress-header">
+                      <span>64%</span>
+                      <span>In Progress</span>
+                    </div>
+
+                    <div class="progress">
+                      <span class="cyan-progress" style="width: 64%"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-item">
+                  <div class="project-info">
+                    <div class="project-icon green">M</div>
+
+                    <div>
+                      <strong>Marketing Campaign</strong>
+                      <span>6 team members</span>
+                    </div>
+                  </div>
+
+                  <div class="progress-area">
+                    <div class="progress-header">
+                      <span>92%</span>
+                      <span class="completed">Almost Done</span>
+                    </div>
+
+                    <div class="progress">
+                      <span class="green-progress" style="width: 92%"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-item">
+                  <div class="project-info">
+                    <div class="project-icon orange">D</div>
+
+                    <div>
+                      <strong>Dashboard Migration</strong>
+                      <span>5 team members</span>
+                    </div>
+                  </div>
+
+                  <div class="progress-area">
+                    <div class="progress-header">
+                      <span>45%</span>
+                      <span>In Progress</span>
+                    </div>
+
+                    <div class="progress">
+                      <span class="orange-progress" style="width: 45%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card team-card">
+              <div class="card-header">
+                <div>
+                  <h2>Team Members</h2>
+                  <p>Current team status</p>
+                </div>
+
+                <a href="#">View all</a>
+              </div>
+
+              <div class="team-table">
+                <div class="team-row team-heading">
+                  <span>Member</span>
+                  <span>Role</span>
+                  <span>Status</span>
+                </div>
+
+                <div class="team-row">
+                  <div class="member">
+                    <span class="member-avatar purple-bg">S</span>
+                    <strong>Sarah</strong>
+                  </div>
+
+                  <span class="role">UI Designer</span>
+
+                  <span class="status online"> <i></i> Online </span>
+                </div>
+
+                <div class="team-row">
+                  <div class="member">
+                    <span class="member-avatar cyan-bg">A</span>
+                    <strong>Alex</strong>
+                  </div>
+
+                  <span class="role">Developer</span>
+
+                  <span class="status online"> <i></i> Online </span>
+                </div>
+
+                <div class="team-row">
+                  <div class="member">
+                    <span class="member-avatar orange-bg">J</span>
+                    <strong>John</strong>
+                  </div>
+
+                  <span class="role">Manager</span>
+
+                  <span class="status away"> <i></i> Away </span>
+                </div>
+
+                <div class="team-row">
+                  <div class="member">
+                    <span class="member-avatar green-bg">S</span>
+                    <strong>Sara</strong>
+                  </div>
+
+                  <span class="role">Marketing</span>
+
+                  <span class="status offline"> <i></i> Offline </span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      menuBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        overlay.classList.toggle("show");
+      });
+
+      overlay.addEventListener("click", () => {
+        sidebar.classList.remove("open");
+        overlay.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>
